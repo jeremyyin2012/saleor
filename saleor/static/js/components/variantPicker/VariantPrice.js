@@ -11,6 +11,7 @@ export default observer(class VariantPrice extends Component {
   render() {
     let priceText, priceUndiscountedText, priceLocalCurrency, isDiscount;
     const { availability, store, displayGrossPrices } = this.props;
+    console.log(displayGrossPrices);
     const variant = store.variant;
     if (!store.isEmpty) {
       // variant price
